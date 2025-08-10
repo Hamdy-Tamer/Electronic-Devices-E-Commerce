@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech - Electronics Store</title>
+    <link rel="shortcut icon" href="images/technological-logo.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navigation bar Starts-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><i class="fa-solid fa-microchip me-2"></i>ElectroTech</a>
+           
+            <div class="collapse navbar-collapse">
+               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
+                   <li class="nav-item"><a class="nav-link active active-link" href="#home">Home</a></li>
+                   <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                   <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                   <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>                   
+               </ul>
+
+                <a href="registration & login form/registration & login index.html" title="Registration & Login Form" class="btn btn-outline-light me-3"><i class="bi bi-person-circle"></i> Login</a>
+                <a href="product management/product management index.html" title="Product Management" class="btn btn-primary"><i class="bi bi-cart-fill"></i> Order Now</a>
+            </div>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="offcanvas offcanvas-end text-white bg-black" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileSidebarLabel"><i class="fa-solid fa-microchip me-2"></i>ElectroTech</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+        <ul class="navbar-nav text-center mx-auto">
+            <li class="nav-item"><a class="nav-link active active-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>            
+        </ul>
+            
+            <div class="mt-4">
+                <a href="registration & login form/registration & login index.html" title="Registration & Login Form" class="btn btn-outline-light mb-3 w-100"><i class="bi bi-person-circle"></i> Login</a>
+                <a href="product management/product management index.html" title="Product Management" class="btn btn-primary w-100"><i class="bi bi-cart-fill"></i> Order Now</a>
+            </div>          
+        </div>
+    </div>
+    <!-- Navbar Ends -->
+    <!-- Navigation bar Endss-->     
+
+<!--=========================================================================================================================================================================================================================================-->    
+
+    <!-- Home Section Starts -->
+    <section class="home-section text-white" id="home">
+         <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Welcome to ElectroTech</h1>
+            <p class="lead mb-5">Your one-stop shop for the latest electronic devices</p>
+            <a href="#products" class="btn btn-primary btn-lg px-4">Explore Our Products <i class="bi bi-arrow-down"></i></a>
+        </div>
+    </section>
+    <!-- Home Section Ends -->
+
+<!--=========================================================================================================================================================================================================================================--> 
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About ElectroTech</h2>
+                    <p class="lead">Your trusted partner in cutting-edge technology since 2010.</p>
+                    <p>At ElectroTech, we're passionate about bringing you the latest and greatest in electronic devices. Our team of tech enthusiasts carefully selects each product in our inventory to ensure quality, performance, and value.</p>
+                    <p>We pride ourselves on exceptional customer service and expert advice to help you find exactly what you need for your home, work, or creative projects.</p>
+                    <div class="d-flex my-5">
+                        <div class="me-4">
+                            <h3 class="text-primary">5000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="me-4">
+                            <h3 class="text-primary">12</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div>
+                            <h3 class="text-primary">100%</h3>
+                            <p>Satisfaction Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/electrotech-team-1.jpg" alt="Our Team" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <a href="#contact" class="btn btn-primary px-4 py-2 my-5">Visit Us <i class="bi bi-arrow-right ms-2"></i></a>
+
+            <!-- Image Slider -->
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12 col-lg-12"> 
+                <h3 class="text-center mb-4">Discover Our Space</h3>
+                    <div id="about-carousel" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded-3 overflow-hidden shadow-lg">
+                            <div class="carousel-item active">
+                                <img src="images/people-repairing-computer.png" class="d-block w-100" loading="lazy" alt="People-Repairing-Computer">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/people-repairing-computer-2.jpg" class="d-block w-100" loading="lazy" alt="People-Repairing-Computer">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/electronics-devices-1.jpg" class="d-block w-100" loading="lazy" alt="Electronic-Devices-1">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/electronics-devices-2.jpg" class="d-block w-100" loading="lazy" alt="Electronic-Devices-2">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/electronics-devices-3.jpg" class="d-block w-100" loading="lazy" alt="Electronic-Devices-3">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/headphones-image.jpg" class="d-block w-100" loading="lazy" alt="HeadPhones">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/smartphones-image.png" class="d-block w-100" loading="lazy" alt="SmartPhones">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/iPad-images.jpg" class="d-block w-100" loading="lazy" alt="Ipad">
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#about-carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#about-carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--=========================================================================================================================================================================================================================================--> 
+
+    <!-- Featured Products -->
+    <section id="products" class="py-5">
+    <div class="container my-5">
+    <h2 class="mb-4 text-center">Our Products</h2>        
+    <div class="row g-4">
+        <!-- Device 1 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/iPhone 15 Pro Max.png" class="card-img-top p-3" alt="iPhone 15 Pro Max">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Smart Phones</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 2 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Wireless Earbuds.jpg" class="card-img-top p-3" alt="Wireless Airpods">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Wireless Airpods</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 3 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Smart Watch.jpg" class="card-img-top p-3" alt="Smart Watch">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Smart Watches</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 4 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/laptop.jpg" class="card-img-top p-3" alt="MacBook Pro 14 M3">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Laptops</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 5 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Tablet-Air.png" class="card-img-top p-3" alt="Tablet Air">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Tablet Air</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 6 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/PlayStation.jpg" class="card-img-top p-3" alt="PlayStation">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Playstation (Latest Versions)</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Device 7 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Xbox.png" class="card-img-top p-3" alt="Xbox">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Xbox</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 8 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Loudspeaker.jpg" class="card-img-top p-3" alt="Loudspeaker">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Loudspeaker (Different Size)</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>        
+        
+        <!-- Device 9 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Sony-WH-1000XM5.jpg" class="card-img-top p-3" alt="HeadPhones">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">HeadPhones</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 10 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Smart TV.png" class="card-img-top p-3" alt="Television">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Smart Televisions</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 11 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Coffee Machine.jpg" class="card-img-top p-3" alt="Coffee Machine">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Coffee Machine</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 12 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Fridge.jpg" class="card-img-top p-3" alt="Fridge">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Fridge</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 13 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Deep Freezer.jpg" class="card-img-top p-3" alt="Deep Freezer">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Deep Freezer</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Device 14 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/dispenser.jpg" class="card-img-top p-3" alt="Dispenser">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Dispenser</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Device 15 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Air Conditioner.jpg" class="card-img-top p-3" alt="Air Conditioner">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Air Conditioner</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Device 16 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Stand Fan.jpg" class="card-img-top p-3" alt="Fans">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Fans</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Device 17 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Electric Heater.png" class="card-img-top p-3" alt="Electric Heater">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Electric Heaters</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>        
+        
+        <!-- Device 18 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Water Heater Electric.jpg" class="card-img-top p-3" alt="Water Heater Electric">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Electric Water Heater</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div> 
+        
+        <!-- Device 19 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Electric Convection Oven.jpg" class="card-img-top p-3" alt="Electric Convection Oven">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Electric Convection Oven</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Device 20 -->
+        <div class="col-lg-3 col-md-6">
+            <div class="card device-card h-100 border-0 shadow-sm">
+                <img src="images/Washing Machine.jpg" class="card-img-top p-3" alt="Washing Machine">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Washing Machines</h5>
+                    <button class="btn btn-warning mt-3">Show More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+<!--==================================================================================================================================================================================================================-->  
+
+    <!-- Contact Section Starts -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="mb-4 fw-bold">Contact Us</h2>
+                    <p class="mb-4">We'd love to hear from you. Whether you have questions about our menu, want to host a private event, or just want to say hello, our team is here to assist you.</p>
+                    
+                    <div class="contact-info">
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Address</h5>
+                                <p class="mb-1">1 Michelin Star Avenue, Culinary District, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Phone</h5>
+                                <p class="mb-0">+1 (212) 555-7890</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Email</h5>
+                                <p class="mb-0">info@electrotech.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <i class="fas fa-clock fa-2x"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold">Hours</h5>
+                                <p class="mb-0">Sunday - Thursday: 10PM - 10PM</p>
+                                <p class="mb-0">Friday - Saturday: 12PM - 11AM</p>
+                            </div>
+                        </div>
+                        <div class="mt-5 directions position-relative">
+                            <i class="fa-solid fa-chevron-right text-black"></i><a class="text-decoration-none btn btn-outline-dark" href="https://maps.app.goo.gl/EdrwGTVQ2Qsu16EP6" target="_blank">Get Your Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="map-container rounded-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27289.921096110236!2d29.94764117431641!3d31.24177500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5dbfec246ef39%3A0xa21c9c4f4c0fcf1f!2sMido%20Computer!5e0!3m2!1sen!2seg!4v1754138544255!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+<!--=========================================================================================================================================================================================================================================-->   
+
+    <!-- Testimonials -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="text-center px-5">
+                                    <p class="lead fst-italic">"Sleek, modern interface with intuitive navigation - makes browsing cutting-edge tech feel effortless."</p>
+                                    <p class="text-dark fw-bold">Jack William</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="text-center px-5">
+                                    <p class="lead fst-italic">"The clean product grids and high-res images showcase devices exactly how customers want to see them."</p>
+                                    <p class="text-dark fw-bold">Mark Sam</p>
+                                </div>
+                            </div>
+
+                             <div class="carousel-item">
+                                <div class="text-center px-5">
+                                    <p class="lead fst-italic">"Smart search with live filtering helps users quickly find specs like RAM size or screen resolution."</p>
+                                    <p class="text-dark fw-bold">Emma Watson</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="text-center px-5">
+                                    <p class="lead fst-italic">"Smart search with live filtering helps users quickly find specs like RAM size or screen resolution."</p>
+                                    <p class="text-dark fw-bold">Mia Gordon</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--=========================================================================================================================================================================================================================================-->      
+
+    <!-- Footer Starts -->
+    <footer class="footer py-5 bg-black">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-brand mb-3 fw-bold fs-2 text-white">ElectroTech</h3>
+                    <p class="text-white">Offering a wide range of smartphones, TVs, laptops, and accessories with detailed specs and competitive prices.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-3 d-inline-flex justify-content-center align-items-center rounded-circle text-white" title="Instagram Page"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-3 d-inline-flex justify-content-center align-items-center rounded-circle text-white" title="Facebook Page"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3 d-inline-flex justify-content-center align-items-center rounded-circle text-white" title="Twitter Page"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="d-inline-flex justify-content-center align-items-center rounded-circle text-white" title="Pinterest Page"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-3 fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 py-2 hover-effect"><a href="#home">Home</a></li>
+                        <li class="mb-2 py-2 hover-effect"><a href="#about">About</a></li>
+                        <li class="mb-2 py-2 hover-effect"><a href="#products">Products</a></li>
+                        <li class="mb-2 py-2 hover-effect"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3 fw-bold">Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-white">Sunday - Thursday: 10PM - 10PM</li>
+                        <li class="text-white">Friday - Saturday: 12PM - 11AM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3 fw-bold">Newsletter</h5>
+                    <p class="text-white">Subscribe to our newsletter for exclusive updates and special offers.</p>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control py-1" placeholder="Your Email" required>
+                            <button class="btn btn-primary border-0" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <div class="mt-4">
+                        <h5 class="mb-3 fw-bold">Payment Methods</h5>
+                        <div class="d-flex flex-wrap">
+                            <i class="fa-solid fa-wallet fa-2x me-3 mb-2 text-white"></i>
+                            <i class="fab fa-cc-visa fa-2x me-3 mb-2 text-white"></i>
+                            <i class="fab fa-cc-mastercard fa-2x me-3 mb-2 text-white"></i>
+                            <i class="fab fa-cc-amex fa-2x me-3 mb-2 text-white"></i>
+                            <i class="fab fa-cc-discover fa-2x mb-2 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white">&copy; 2020 ElectroTech. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+<!--==================================================================================================================================================================================================================--> 
+
+    <!-- Scroll To Top Start-->
+        <button type="button" class="btn btn-primary" id="scrollTopBtn"><i class="fa-solid fa-chevron-up fs-6 text-white"></i></button>
+    <!-- Scroll To Top End-->
+
+<!--==================================================================================================================================================================================================================-->  
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS File -->
+    <script src="script.js"></script>
+</body>
+</html>

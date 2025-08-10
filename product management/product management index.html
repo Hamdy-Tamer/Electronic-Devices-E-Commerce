@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management | ElectroTech</title>
+    <link rel="shortcut icon" href="technological-logo.png" type="image/png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="product managemet style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+         <!-- Product Management Section -->
+    <section id="management" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Product Management</h2>
+            
+            <!-- Form Section -->
+            <div class="col-lg-6 mx-auto p-4 p-md-5 rounded-3 shadow-sm bg-white mb-5">
+                <div class="form-group mb-4">          
+                    <label for="ProductName" class="form-label fw-bold">Product Name</label> 
+                    <input type="text" id="ProductName" onkeyup="validationProductName()" class="form-control py-2">
+                    <div class="text-danger small mt-1 d-none" id="nameError">
+                        <i class="fas fa-exclamation-circle me-1"></i>
+                        Name must: Start with capitals, 2-30 chars, no special characters
+                    </div>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="ProductQty" class="form-label fw-bold">Quantity</label>
+                    <input type="number" id="ProductQty" class="form-control py-2" min="1" max="10" value="1">
+                </div>
+        
+                <div class="form-group mb-4">
+                    <label for="ProductCate" class="form-label fw-bold">Category</label>
+                    <select id="ProductCate" class="form-select py-2">
+                        <option value="">Select...</option>
+                        <option>Smartphones</option>
+                        <option>Laptops</option>
+                        <option>Tablets</option>
+                        <option>Audio</option>
+                        <option>Accessories</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="ProductPayment" class="form-label fw-bold">Payment Method</label>
+                    <select id="ProductPayment" class="form-select py-2">
+                        <option value="">Select...</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="American Express">American Express</option>
+                        <option value="Discover">Discover</option>
+                    </select>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="ProductDesc" class="form-label fw-bold">Description</label>
+                    <textarea id="ProductDesc" class="form-control py-2" rows="2" maxlength="50"></textarea>
+                </div>
+
+                <div class="d-grid">
+                    <button type="submit" id="mainBtn" onclick="addProduct()" class="btn btn-primary py-2">
+                        <i class="fas fa-plus-circle me-2"></i>Add Product
+                    </button>
+                </div>
+            </div>
+
+            <!-- Search Section -->
+            <div class="col-lg-8 mx-auto mb-4">
+                <div class="input-group">
+                    <span class="input-group-text bg-white">
+                        <i class="fas fa-search text-muted"></i>
+                    </span>
+                    <input type="search" oninput="searchProduct(this.value)" id="Search" class="form-control py-2" placeholder="Enter Your Product Name">
+                </div>
+            </div>
+
+            <!-- Desktop Table (hidden on mobile) -->
+            <div class="d-none d-md-block">
+                <div class="table-responsive">
+                    <div class="w-75 mx-auto">
+                        <table class="table mt-5">
+                            <thead>
+                                <th class="text-white bg-primary">index</th>
+                                <th class="text-white bg-primary">ProductName</th>
+                                <th class="text-white bg-primary">Quantity</th>
+                                <th class="text-white bg-primary">ProductCate</th>
+                                <th class="text-white bg-primary">Payment Method</th>
+                                <th class="text-white bg-primary">ProductDesc</th>
+                                <th class="text-white bg-primary">Update</th>
+                                <th class="text-white bg-primary">Delete</th>
+                            </thead>
+
+                            <tbody id="Tbody">
+                                <!-- Products Automatically Appear Here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Cards (visible only on phones) -->
+            <div id="mobile-products-view" class="row row-cols-1 g-3 d-md-none">
+                <!-- Cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="product management script.js"></script>
+
+</body>
+</html>
